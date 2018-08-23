@@ -55,7 +55,7 @@ public class Main {
         //Soru 3: Klavyeden girilen vize ve final notlarına göre öğrencinin dersi geçip geçmediğini söyleyen bir uygulama yazınız.
         // (Geçme notu = 50, vizenin %40 ı, finalin %60 ı geçerlidir.
 
-
+/*
         int vizeNotu, finalNotu;
         double ortalama;
 
@@ -74,6 +74,37 @@ public class Main {
         }else{
             System.err.println("Dersten kaldınız Ortlamanız : " + ortalama);
         }
+*/
+        //******************************************
+
+        //Soru 4: Kendi adınızı ekrana 5 kere yazdıran uygulamayı yazınız.
+
+
+        String isim = "";
+        int sayac = 0;
+
+        Scanner tara = new Scanner(System.in);
+
+        System.out.println("Tam adınızı giriniz :");
+        isim = tara.nextLine();
+
+/*
+        for (int i = 0; i < 5; i++){
+            System.out.println(i+1 + " nolu isiminiz : " + isim);
+        }
+*/
+
+/*
+        while(sayac < 5){
+            System.out.println(sayac+1 + " nolu isiminiz : " + isim);
+            sayac++;
+        }
+*/
+
+        do {
+            System.out.println(sayac+1 + " nolu isiminiz : " + isim);
+            sayac++;
+        }while(sayac < 5);
 
     }
 }

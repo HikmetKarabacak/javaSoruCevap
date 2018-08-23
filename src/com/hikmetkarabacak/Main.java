@@ -28,7 +28,7 @@ public class Main {
         //******************************************
 
         //Soru 2: Klavyeden kenarları girilen bir üçgenin çeşidini veren uygulamayı yazınız
-
+/*
         int x, y, z;
 
         Scanner tara = new Scanner(System.in);
@@ -48,6 +48,31 @@ public class Main {
             System.out.println("Üçgenimiz çeşitkenardır");
         } else {
             System.out.println("üçgenimiz ikizkenardır");
+        }
+*/
+        //******************************************
+
+        //Soru 3: Klavyeden girilen vize ve final notlarına göre öğrencinin dersi geçip geçmediğini söyleyen bir uygulama yazınız.
+        // (Geçme notu = 50, vizenin %40 ı, finalin %60 ı geçerlidir.
+
+
+        int vizeNotu, finalNotu;
+        double ortalama;
+
+        Scanner tara = new Scanner(System.in);
+
+        System.out.println("Vize notunu giriniz :");
+        vizeNotu = tara.nextInt();
+
+        System.out.println("Final notunu giriniz :");
+        finalNotu = tara.nextInt();
+
+        ortalama = vizeNotu * 0.4 + finalNotu * 0.6;
+
+        if(ortalama > 50){
+            System.out.println("Dersi geçtiniz Ortalamanız : " + ortalama);
+        }else{
+            System.err.println("Dersten kaldınız Ortlamanız : " + ortalama);
         }
 
     }
